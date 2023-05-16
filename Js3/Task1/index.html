@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3 TASK1</title>
+    <script src="../Task1/script.js"></script>
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        .container {
+          position: relative;
+          height: 100%;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .text-overlay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <img src="https://www.mercedes-amg.com/content/global/en/vehicles/gt/4-door-coupe-e-performance-pad/jcr:content/content/fullwidthimage_copy.media6.responsive_12col_16_9.1683102308978.jpeg" alt="Full-Screen Image">
+        <div class="text-overlay">
+          <h1>Mercedes</h1>
+          <p>Look in the console</p>
+        </div>
+      </div>
+    </body>
+</html>
