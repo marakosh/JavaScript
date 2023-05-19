@@ -2,7 +2,6 @@ const apiUrl = 'http://localhost:3000/tasks';
 
 let tasks = [];
 
-// Load tasks from the server
 async function loadTasks() {
   try {
     const response = await fetch(apiUrl);
@@ -17,7 +16,7 @@ async function loadTasks() {
   }
 }
 
-// Save tasks to the server
+
 async function saveTasks() {
   try {
     const response = await fetch(apiUrl, {
@@ -37,7 +36,7 @@ async function saveTasks() {
   }
 }
 
-// Add a new task
+
 function addTask() {
   const taskInput = document.getElementById('taskInput');
   const taskText = taskInput.value.trim();
@@ -53,21 +52,21 @@ function addTask() {
   }
 }
 
-// Toggle a task's completed status
+
 function toggleTask(index) {
   tasks[index].completed = !tasks[index].completed;
   saveTasks();
   renderTasks();
 }
 
-// Delete a task
+
 function deleteTask(index) {
   tasks.splice(index, 1);
   saveTasks();
   renderTasks();
 }
 
-// Render tasks
+
 function renderTasks() {
   const taskList = document.getElementById('taskList');
   taskList.innerHTML = '';
@@ -82,9 +81,9 @@ function renderTasks() {
   });
 }
 
-// Load tasks when the page is loaded
+
 document.addEventListener('DOMContentLoaded', loadTasks);
 
-// Add event listener to the add button
+
 const addButton = document.getElementById('addButton');
 addButton.addEventListener('click', addTask);
