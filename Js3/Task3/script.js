@@ -79,5 +79,3 @@ displayTime(time);
 
 changeTimeByHours(time, 1);
 displayTime(time);
-
-  
