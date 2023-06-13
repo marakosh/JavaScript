@@ -1,0 +1,13 @@
+.book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.orange-bg {
+    background-color: orange;
+}

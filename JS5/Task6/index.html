@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Hints</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'This is the hint for button 1')">Button 1</button>
+        <span class="tooltiptext"></span>
+    </div>
+    
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'This is the hint for button 2')">Button 2</button>
+        <span class="tooltiptext"></span>
+    </div>
+    
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'This is the hint for button 3')">Button 3</button>
+        <span class="tooltiptext"></span>
+    </div>
+    
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'This is the hint for button 4')" onmouseout="hideTooltip(event)">Button 4</button>
+        <span class="tooltiptext bottom"></span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
